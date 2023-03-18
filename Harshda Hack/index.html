@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*PORTFOLIO*/
+.extra {
+	width: 100%;
+}
+.extra p {
+	padding: 30px;
+	padding-bottom: 150px;
+	font-size: 50px;
+	text-align: center;
+	color: #383737;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: cursive;
+	z-index: -9;
+}
+.smbox {
+	display: flex;
+	flex-wrap: wrap;
+	transform: translateY(-100px);
+	justify-content: center;
+}
+.smbox span {
+	margin: 1%;
+	background: #fff;
+	box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2),
+						0 0 40px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	padding: 30px 50px;
+	cursor: pointer;
+}
+.smbox span:hover {
+	transform: scale(1.3);
+	transition: .5s ease;
+}
+.smbox .data {
+	font-size: 80px;
+	color: #FA6146;	
+}
+.smbox .det {
+	font-size: 20px;
+	color: #272529;
+	font-family: cursive;
+}
+/*TEAM SECTION*/
+.totalcard {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.totalcard .card {
+	margin: 50px;
+	width: 300px;
+	border-radius: 10px;
+	background: #fff;
+}
+.totalcard .card{
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.4),
+					0 0 10px rgba(0,0,0,0.3);
+}
+.card:nth-child(1){
+	border-top: 5px solid green;
+}
+.card:nth-child(2){
+	border-top: 5px solid blue;
+}
+.card:nth-child(3){
+	border-top: 5px solid green;
+}
+.card:nth-child(4){
+	border-top: 5px solid blue;
+}
+.card:nth-child(5){
+	border-top: 5px solid green;
+}
+.card:nth-child(6){
+	border-top: 5px solid blue;
+}
+.card:nth-child(1):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
+				1px 1px 30px rgba(0,255,0,0.5);
+}
+.card:nth-child(2):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
+				1px 1px 30px rgba(0,0,255,0.5);
+}
+.card:nth-child(3):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
+				1px 1px 30px rgba(0,255,0,0.5);
+}
+.card:nth-child(4):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
+				1px 1px 30px rgba(0,0,255,0.5);
+}
+.card:nth-child(5):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
+				1px 1px 30px rgba(0,255,0,0.5);
+}
+.card:nth-child(6):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
+				1px 1px 30px rgba(0,0,255,0.5);
+}
+.totalcard .card img {
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
+	cursor: pointer;
+	border-radius: 50px;
+	transition-duration: .8s;
+}
+.totalcard .card img:hover {
+	transform: scale(3.5);
+	border-radius: 0;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#detail p{
+	font-size: 15px;
+	line-height: 25px;
+	font-variant: small-caps;
+	text-align: center;
+	margin: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#detail button {
+	outline: none;
+	border-radius: 10px;
+	border-style: none;
+	border: 1px solid black;
+	padding: 9px 25px;
+	cursor: pointer;
+	transition-duration: .4s;
+    margin-left: 50px;
+    align-self: center;
+}
+#detail a {
+	bottom: 80px;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-left: 90px;
+	align-self: center;
+}
+.btn-roshan:hover {
+	background: rgba(0,255,0,0.7);
+	color: #fff;
+}
+.btn-roshan2:hover {
+	background: rgba(0,0,255,0.5);
+	color: #fff;
+}
+.card-title {
+	font-size: 17px;
+	color: #343A40;
+	padding: 20px;
+	font-weight: 700;
+}
+
+/*Service Section*/
+.service-swipe {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgb(121, 117, 117),rgb(255, 252, 252)),url("images/extra/bg3.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.service-swipe .s-card img {
+	width: 100px;
+}
+.service-swipe a {
+	padding: 0;
+	margin: 40px 10px;
+}
+.service-swipe .s-card {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	height: 200px;
+	box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
+					0 0 50px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: .5s;
+    color: #272529;
+}
+.service-swipe .s-card p {
+	color: #f2f2f2;
+	font-size: 1.2em;
+	font-family: 'Open Sans',sans-serif;
+}
+.service-swipe .s-card:hover {
+	box-shadow: 0 0 50px rgba(255,255,255,0.8);
+	transform: translateY(-10px);
+}
+
+
+
+    </style>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Heart Disease Analysis &amp; Prediction</title>
+
+    <link href="css/styles-merged.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="css/predictor.css" rel="stylesheet">
+    <link href="css/back-to-top.css" rel="stylesheet">
+    
+
+    
+</head>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="js/back-to-top.js"></script>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default probootstrap-navbar">
+    
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed"
+                    data-target="#navbar-collapse"
+                    data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            
+            
+            <a class="navbar-brand" href="index.html"><p style="font-family:Comic Sans MS"><i>HACK ELITE</i> </p></a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a data-nav-section="home" href="#">Home</a></li>
+                <li><a data-nav-section="features" href="#">Features</a></li>
+                <li><a data-nav-section="predict" href="#">Predict</a></li>
+                <li><a data-nav-section="analysis" href="#">Analysis</a></li>
+                <li><a data-nav-section="contact" href="#">Contact</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant"
+         data-section="home" data-stellar-background-ratio="0.5" id="home"
+         style="background-image: url(img/main_back.jpg);">
+    <div class="container">
+        <div class="row intro-text">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="probootstrap-heading probootstrap-animate" style="color:#E0F7FA">Predict your chance of
+                    having a heart disease because prevention is better than cure!</h1>
+                <div class="probootstrap-subheading center">
+                    <p class="probootstrap-animate"><a class="btn btn-primary" href="#predict" role="button">Check
+                        Now</a><a class="btn btn-default smoothscroll" href="#analysis" role="button">See Analysis</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<button class="btn btn-primary" id="backToTopBtn" onclick="topFunction()" title="Go to top">
+    <span class="icon icon-align-top"></span>
+</button>
+
+<!-- PORTFOLIO -->
+<div class="diffSection" id="portfolio_section">
+    <center><p style="color: rgb(240, 76, 54);font-size: 50px; padding: 100px; padding-bottom: 40px; font-family:Comic Sans MS">PORTFOLIO</p></center>
+    <div class="content">
+        <p style="font-family:Comic Sans MS">
+            Heart disease, also known as cardiovascular disease, refers to a range of conditions that affect the heart and blood vessels. These conditions can include coronary artery disease, heart failure, arrhythmias, and heart valve problems. Heart disease is a leading cause of death worldwide and can be caused by various factors, including genetics, lifestyle habits (such as smoking and poor diet), and certain medical conditions (such as high blood pressure and diabetes). Treatment for heart disease may include lifestyle changes, medication, and medical procedures such as angioplasty or bypass surgery. Prevention is also important, and maintaining a healthy lifestyle with regular exercise, a balanced diet, and avoiding smoking can help reduce the risk of developing heart disease.
+        </p>
+    </div>
+</div>
+<div class="extra">
+    <p>Some facts about cardiovascular disease</p>
+    <div class="smbox">
+    <span><center><div class="data">4M</div><div class="det">Total Patients</div></center></span>
+    <span><center><div class="data">28%</div><div class="det">Total Death</div></center></span>
+    <span><center><div class="data">04</div><div class="det">Types of disease</div></center></span>
+    <span><center><div class="data">13.2%</div><div class="det">Growth Rate</div></center></span>
+    
+    </div>
+</div>
+<section class="probootstrap-section" data-section="predict" id="predict">
+    <div class="container">
+        <div class="row text-center mb100">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                <h2 class="mb30 text-black probootstrap-heading">Predict your Chance of Having a Heart Disease</h2>
+                <p>Enter the appropriate values of symptoms you face. Get the chances of you contracting heart disease
+                    based on those values.</p>
+            </div>
+        </div>
+        <!-- END row -->
+        <!-- Main Div -->
+        <div id="parent">
+            <div id="wrapper">
+                <div style="text-align: center;">
+                    <h1 class="text-black probootstrap-heading">Heart Disease Predictor</h1>
+                </div>
+                <div class="child1">
+                    <table class="naked_table">
+                        <tr>
+                            <td>
+                                <label class="before_slider" for="nSex1">
+                                    Sex (0=female,1=male)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nSex1" max="1" min="0" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="1" type="range" value="0"/>
+                                    <input class="hd-number-width" id="nSex2" max="1" min="0" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="1" type="number" value="0"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nRestbp1">
+                                Resting Blood Pressure (94 - 200 mmHg)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nRestbp1" max="200" min="94" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="all" type="range" value="94"/>
+                                    <input class="hd-number-width" id="nRestbp2" max="200" min="94" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="all" type="number" value="94"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nThalach1">
+                                Thalium Stress Test Maximum Heart Rate (71 - 202)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nThalach1" max="202" min="71" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="all" type="range" value="71"/>
+                                    <input class="hd-number-width" id="nThalach2" max="202" min="71" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="all" type="number" value="71"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nCa1">
+                                Number of Major Vessels Colored by Fluoroscopy (0 - 3)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nCa1" max="3" min="0" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="all" type="range" value="0"/>
+                                    <input class="hd-number-width" id="nCa2" max="3" min="0" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="all" type="number" value="0"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nCp1">
+                                Chest Pain Type (1=typical angina, 2=atypical angina, 3=non-angina, 4=asymptomatic
+                                angina)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nCp1" max="4" min="1" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="1" type="range" value="1"/>
+                                    <input class="hd-number-width" id="nCp2" max="4" min="1" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="1" type="number" value="1"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nSlope1">
+                                Peak Exercise ST Segment (0=flat or downsloping, 1=upsloping)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nSlope1" max="1" min="0" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="1" type="range" value="0"/>
+                                    <input class="hd-number-width" id="nSlope2" max="1" min="0" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="1" type="number" value="0"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="before_slider" for="nThal1">
+                                Thalium Test: (0=normal or fixed defect, 1=reversible defect)</label></td>
+                            <td class="input_slider">
+                                <form class="slider_input">
+                                    <input class="hd-slider-width" id="nThal1" max="1" min="0" name="amountRange"
+                                           oninput="this.form.amountInput.value=this.value"
+                                           step="1" type="range" value="0"/>
+                                    <input class="hd-number-width" id="nThal2" max="1" min="0" name="amountInput"
+                                           oninput="this.form.amountRange.value=this.value"
+                                           step="1" type="number" value="0"/>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="input_slider">
+                                <input class="btn btn-primary" onclick="updateOne(val01,-1)" type="button"
+                                       value="Reset All Sliders"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child2">
+                    <script>
+                        const width = 100;
+                        const height = 400;
+
+                        const holder = d3.select(".child2")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height);
+
+                        // draw a rectangle
+                        const y0 = 20;
+                        const height0 = 380;
+                        holder.append("rect")
+                            .attr("x", 5)
+                            .attr("y", y0 + height0)
+                            .style("fill", "rgb(0,255,0)")
+                            .attr("height", 0)
+                            .attr("width", 90);
+
+                        // draw a container rectangle
+                        holder.append("rect")
+                            .attr("x", 5)
+                            .attr("y", y0)
+                            .style("fill", "none")
+                            .style("stroke", "lightblue")
+                            .style("stroke-width", 4)
+                            .attr("height", height0)
+                            .attr("width", 90);
+
+                        // add text inside rectangle
+                        holder.append("text")
+                            .text("0.00%")
+                            .attr("x", 12)
+                            .attr("y", y0 + height0 - 10)
+                            .attr("fill", "black")
+                            .attr("font-family", "Verdana")
+                            .attr("font-size", "20");
+
+                        // initialize
+                        let val01 = document.getElementById("nSex1").value;
+                        let val02 = document.getElementById("nRestbp1").value;
+                        let val03 = document.getElementById("nThalach1").value;
+                        let val04 = document.getElementById("nCa1").value;
+                        let val05 = document.getElementById("nCp1").value;
+                        let val06 = document.getElementById("nSlope1").value;
+                        let val07 = document.getElementById("nThal1").value;
+                        updateOne(val01, 0);
+
+                        // Check for changes in the inputs and update output bar
+                        d3.select("#nSex1").on("input", function () {
+                            updateOne(+this.value, 1);
+                        });
+                        d3.select("#nSex2").on("input", function () {
+                            updateOne(+this.value, 1);
+                        });
+                        d3.select("#nRestbp1").on("input", function () {
+                            updateOne(+this.value, 2);
+                        });
+                        d3.select("#nRestbp2").on("input", function () {
+                            updateOne(+this.value, 2);
+                        });
+                        d3.select("#nThalach1").on("input", function () {
+                            updateOne(+this.value, 3);
+                        });
+                        d3.select("#nThalach2").on("input", function () {
+                            updateOne(+this.value, 3);
+                        });
+                        d3.select("#nCa1").on("input", function () {
+                            updateOne(+this.value, 4);
+                        });
+                        d3.select("#nCa2").on("input", function () {
+                            updateOne(+this.value, 4);
+                        });
+                        d3.select("#nCp1").on("input", function () {
+                            updateOne(+this.value, 5);
+                        });
+                        d3.select("#nCp2").on("input", function () {
+                            updateOne(+this.value, 5);
+                        });
+                        d3.select("#nSlope1").on("input", function () {
+                            updateOne(+this.value, 6);
+                        });
+                        d3.select("#nSlope2").on("input", function () {
+                            updateOne(+this.value, 6);
+                        });
+                        d3.select("#nThal1").on("input", function () {
+                            updateOne(+this.value, 7);
+                        });
+                        d3.select("#nThal2").on("input", function () {
+                            updateOne(+this.value, 7);
+                        });
+
+                        // Update the heart disease probability
+                        function updateOne(value, index) {
+
+                            if (index === 1) {
+                                val01 = value;
+                            } else if (index === 2) {
+                                val02 = value;
+                            } else if (index === 3) {
+                                val03 = value;
+                            } else if (index === 4) {
+                                val04 = value;
+                            } else if (index === 5) {
+                                val05 = value;
+                            } else if (index === 6) {
+                                val06 = value;
+                            } else if (index === 7) {
+                                val07 = value;
+                            } else if (index === -1) {
+                                // Set everything back to default state:
+                                val01 = document.getElementById("nSex1").defaultValue;
+                                document.getElementById("nSex1").value = val01;
+                                document.getElementById("nSex2").value = val01;
+                                val02 = document.getElementById("nRestbp1").defaultValue;
+                                document.getElementById("nRestbp1").value = val02;
+                                document.getElementById("nRestbp2").value = val02;
+                                val03 = document.getElementById("nThalach1").defaultValue;
+                                document.getElementById("nThalach1").value = val03;
+                                document.getElementById("nThalach2").value = val03;
+                                val04 = document.getElementById("nCa1").defaultValue;
+                                document.getElementById("nCa1").value = val04;
+                                document.getElementById("nCa2").value = val04;
+                                val05 = document.getElementById("nCp1").defaultValue;
+                                document.getElementById("nCp1").value = val05;
+                                document.getElementById("nCp2").value = val05;
+                                val06 = document.getElementById("nSlope1").defaultValue;
+                                document.getElementById("nSlope1").value = val06;
+                                document.getElementById("nSlope2").value = val06;
+                                val07 = document.getElementById("nThal1").defaultValue;
+                                document.getElementById("nThal1").value = val07;
+                                document.getElementById("nThal2").value = val07;
+                            }
+
+                            
+                            let srbp_val = (val02 - 131.7157) / 17.7478;
+                            let sthalach_val = (val03 - 149.3278) / 23.1211;
+                            let sca_val = (val04 - 0.6722) / 3.0;
+
+                        
+                            let cp_contr = 0.0;
+                            if (val05 === 1) {
+                                cp_contr = -2.2318;
+                            } else if (val05 === 2) {
+                                cp_contr = -1.2681;
+                            } else if (val05 === 3) {
+                                cp_contr = -2.1124;
+                            }
+                            let slope_contr = 0.0;
+                            if (val06 === 1) {
+                                slope_contr = -1.4726;
+                            }
+                            let thal_contr = 0.0;
+                            if (val07 === 1) {
+                                thal_contr = 1.5009;
+                            }
+
+                            // Compute log-odds, then probability:
+                            let scprod = 1.4361 * val01 + 0.4415 * srbp_val - 0.4431 * sthalach_val + 3.7984 * sca_val + cp_contr + slope_contr + thal_contr;
+                            let drec = 1.0 / (1.0 + Math.exp(-scprod));
+                            let drecs = height0 * drec;
+                            drec *= 100;
+
+                            
+                            let rcolor = percentToRGB(drec);
+                            holder.select("rect")
+                                .attr("y", y0 + height0 - drecs)
+                                .attr("height", drecs)
+                                .style("fill", rcolor);
+
+                            holder.select("text")
+                                .text(function () {
+                                    return parseFloat(Math.round(drec * 100) / 100).toFixed(2) + "%";
+                                });
+
+                        }
+
+                        function percentToRGB(percent) {
+                            if (percent === 100) {
+                                percent = 99
+                            }
+                            let r, g, b;
+
+                            if (percent < 50) {
+                                // green to yellow
+                                r = Math.floor(255 * (percent / 50));
+                                g = 255;
+
+                            } else {
+                                // yellow to red
+                                r = 255;
+                                g = Math.floor(255 * ((50 - percent % 50) / 50));
+                            }
+                            b = 0;
+
+                            return "rgb(" + r + "," + g + "," + b + ")";
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+<!-- SERVICES -->
+<div class="service-swipe">
+    <div class="diffSection" id="services_section">
+    <center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff; color: #272529;">Heart Disease&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></center>
+    </div>
+    <a href="https://www.nhs.uk/conditions/coronary-heart-disease/#:~:text=Coronary%20heart%20disease%20is%20the,furred%20up%20with%20fatty%20deposits."><div class="s-card"><img src="images/icon/image1.png"><p style="color:rgb(0, 0, 0);">Coronary heart disease
+        </p></div></a>
+    <a href="https://www.mayoclinic.org/diseases-conditions/transient-ischemic-attack/symptoms-causes/syc-20355679"><div class="s-card"><img src="images/icon/image2.jpg"><p style="color:rgb(0, 0, 0);">Strokes and TIAs</p></div></a>
+    <a href="https://www.mayoclinic.org/diseases-conditions/peripheral-artery-disease/symptoms-causes/syc-20350557#:~:text=Peripheral%20artery%20disease%20(also%20called,to%20keep%20up%20with%20demand."><div class="s-card"><img src="images/icon/image3.jpg"><p style="color:rgb(0, 0, 0);">Peripheral arterial disease</p></div></a>
+    <a href="https://www.mayoclinic.org/diseases-conditions/aortic-valve-disease/symptoms-causes/syc-20355117#:~:text=Aortic%20valve%20disease%20is%20a,correct%20direction%20through%20the%20heart."><div class="s-card"><img src="images/icon/image4.jpg"><p style="color:rgb(0, 0, 0);">Aortic disease</p></div></a>
+    
+    
+</div>
+<section class="probootstrap-section probootstrap-bg-light" data-section="analysis" id="analysis">
+    <div class="container">
+        <div class="row text-center mb100">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                <h2 class="mb30 text-black probootstrap-heading">Analysis Results Based on Dataset Available</h2>
+                <p>Model's accuracy is 87.3 %. The following are the results of analysis done on the available
+                    heart disease dataset. Each graph shows the result based on different attributes.</p>
+                <p>Green box indicates No Disease. Red box indicates Disease.</p>
+                <img alt="Flow of Analysis" class="img-responsive probootstrap-shadow" src="img/flow.jpg">
+            </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="Age" class="img-responsive probootstrap-shadow" src="img/plots/age.jpg">
+                </div>
+            </div>
+            
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="Type of Chest Pain" class="img-responsive probootstrap-shadow"
+                         src="img/plots/chestpain.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="ST Depression Induced by Excercise" class="img-responsive probootstrap-shadow"
+                         src="img/plots/depression.jpg">
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="Fasting Blood Sugar" class="img-responsive probootstrap-shadow"
+                         src="img/plots/fastingsugar.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="Major Vessels Colored by Fluoroscopy" class="img-responsive probootstrap-shadow"
+                         src="img/plots/fluoroscopy.jpg">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="probootstrap-testimonial">
+                    <img alt="Slope of Peak Excercise ST Segment" class="img-responsive probootstrap-shadow"
+                         src="img/plots/peak.jpg">
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<div class="diffSection" id="team_section">
+    <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Our Doctors</p></center>
+    <div class="totalcard">
+        <div class="card">
+            <center><img src="images/creator/doc1.jpg"></center>
+            <center><div class="card-title">Dr.Rohan Ahirekar</div>
+            <div id="detail">
+                <p>Cardiologist<br>Experience:10 years<br>Contact no:+91 8923456789</p>
+                <div class="duty"></div>
+                
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/doc2.jpg"></center>
+            <center><div class="card-title">Dr.Sanika Navale</div>
+            <div id="detail">
+                <p>Cardiologist<br>Experience:5 years<br>Contact no:+91 9843256123</p>
+                <div class="duty"></div>
+                
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/doc3.jpg"></center>
+            <center><div class="card-title">Dr.Yash Shinde</div>
+            <div id="detail">
+                <p>Cardiologist<br>Experience:3 years<br>Contact no:+91 8129038456</p>
+                <div class="duty"></div>
+>
+            </div>
+            </center>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+<section class="probootstrap-section probootstrap-bg-light" data-section="features" id="features">
+    <div class="container">
+        <div class="row text-center mb100">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                <h2 class="mb30 text-black probootstrap-heading">Features</h2>
+                <div class="service-swipe">
+                    <div class="diffSection" id="services_section">
+                    
+                    </div>
+                    <a href="https://www.nhs.uk/conditions/coronary-heart-disease/#:~:text=Coronary%20heart%20disease%20is%20the,furred%20up%20with%20fatty%20deposits."><div class="s-card"><img src="img/cost.png"><p style="color:rgb(0, 0, 0);"><a style="font-family:Comic Sans MS; font-size:2vw">Cost Efficient</a>
+                        </p></div></a>
+                    <a href="https://www.mayoclinic.org/diseases-conditions/transient-ischemic-attack/symptoms-causes/syc-20355679"><div class="s-card"><img src="img/death.jpg"><p style="color:rgb(0, 0, 0);"><a style="font-family:Comic Sans MS; font-size:2vw">Low death rated</a></p></div></a>
+                    <a href="https://www.mayoclinic.org/diseases-conditions/peripheral-artery-disease/symptoms-causes/syc-20350557#:~:text=Peripheral%20artery%20disease%20(also%20called,to%20keep%20up%20with%20demand."><div class="s-card"><img src="img/time.png"><p style="color:rgb(0, 0, 0);"><a style="font-family:Comic Sans MS; font-size:2vw">Reduced Time</a></p></div></a>
+                    <a href="https://www.mayoclinic.org/diseases-conditions/aortic-valve-disease/symptoms-causes/syc-20355117#:~:text=Aortic%20valve%20disease%20is%20a,correct%20direction%20through%20the%20heart."><div class="s-card"><img src="img/userfriendly.jpg"><p style="color:rgb(0, 0, 0);"><a style="font-family:Comic Sans MS; font-size:2vw">User friendly</a></p></div></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- END row -->
+        
+        <!-- END row -->
+        
+        <!-- END row -->
+        
+</section>
+<!-- END section -->
+
+
+
+<section class="probootstrap-section probootstrap-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="probootstrap-heading ; font-size:3vw"><b>Future Scope</b></h2>
+                <img alt="Flow of Analysis" class="img-responsive probootstrap-shadow" src="Patient.jpg">
+                <p style="font-family:Comic Sans MS ;color: rgb(0, 0, 0)"><a style="font-size:2vw; color: #272529;"><b>Technology and Algorithms</b></a><br>
+                    Android technology would be used to develop an application that allows the detection of heartbeat on cell phone of patient and also comparisons are made
+                    with existing datasets. For detection of various characteristics of the ECG signal i.e. the P-QRS-T complexes, ECG detection algorithms.The device detect that patient is in denger then device will inform nearby ambulance,Hospital and relatives. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--team images-->
+<div class="diffSection" id="team_section">
+    <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Team members</p></center>
+    <div class="totalcard">
+        <div class="card">
+            <center><img src="images/creator/formal pic.jpeg"></center>
+            <center><div class="card-title">Harshda Sonawane</div>
+            <div id="detail">
+                <p>Frontend web developer<br>Experience:10 years<br>Contact no:+91 8923456789</p>
+                
+                <div class="duty"></div>
+                
+                <a href="https://www.linkedin.com/in/harshda-sonawane-733a2a224" ><button class="btn-roshan">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/p.jpg"></center>
+            <center><div class="card-title">Pooja Raskar</div>
+            <div id="detail">
+                <p>Frontend web developer<br>Contact no:+91 9843256123</p>
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/pooja-raskar-347972239" target="_blank"><button class="btn-akhil">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/s.jpg"></center>
+            <center><div class="card-title">Shardul Mane</div>
+            <div id="detail">
+                <p>Backend web developer<br>Contact no:+91 8129038456</p>
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/shardul-mane-6ba613243" target="_blank"><button class="btn-roshan">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+
+        <div class="card">
+            <center><img src="images/creator/a.jpg"></center>
+            <center><div class="card-title">Anurag Patil</div>
+            <div id="detail">
+                <p>Graphic Designer<br>Contact no:+91 8129038456</p>
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/anurag-patil-511b71260" target="_blank"><button class="btn-roshan">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+        
+    </div>
+</div>
+
+<section class="probootstrap-section probootstrap-bg-light" data-section="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" class="probootstrap-form">
+                    <h2 class="text-black mt0">Get In Touch</h2>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Your Phone" type="number">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" cols="30" placeholder="Write a Message" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+                <ul class="probootstrap-contact-details">
+                    <li>
+                        <span class="text-uppercase">Email <span class="icon icon-email"></span></span>
+                        harshdasonawane7@gmail.com <br>
+                        shardulrmane4321@gmail.com <br>
+                        poojaraskar446@gmail.com   <br>
+                        anurag.vhpatil@gmail.com
+                    </li>
+                    <li>
+                        <span class="text-uppercase">GitHub <span class="icon icon-github2"></span></span>
+                        <a href="https://github.com/harshda05" target="_blank">Harshda</a> <br>
+                        <a href="https://github.com/shardul2302" target="_blank">Shardul</a> <br>
+                        <a href="https://github.com/Pooja-Raskar" target="_blank">Pooja</a> <br>
+                        <a href="https://github.com/AnuragP02" target="_blank">Anurag</a> <br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="probootstrap-footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="probootstrap-link" href="#home">Back to top <span class="icon icon-align-top"></span></a> <br>
+                &copy; 2023. All Rights Reserved. <br> Designed &amp; Developed by <a
+                    href="https://github.com/harshda05" target="_blank">Harshda <span
+                    class="icon icon-github"></span></a> &amp; <a href="https://github.com/Pooja-Raskar" target="_blank">Pooja</a>
+                        
+                <span class="icon icon-github"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
